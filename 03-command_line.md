@@ -20,22 +20,31 @@ Here's a list of items with which you should be familiar:
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do.  (Use the 8 items above and add a couple of your own.)  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+* `rm -rf dirname` - delete a directory
+* `mkdir dirname` - create a directory
+* `touch filename` - create a file
+* `mv file1 file2` - rename a file
+* `ls -a` - list hidden files
+* `cp dir1/file1 dir2/file1` - copy a file from one directory to another
+* `pwd` - show current working directory path
+* `rm -i filename` - delete a file
+* `sudo !!` - repeat last command with sudo
+* `ps aux | grep task` - list and aux task  
+* `sudo echo "make me a sandwhich"` - command someone to make you a sandwhich ([xkcd reference](https://xkcd.com/149/))
 
 ---
 
 ### Q2.  List Files in Unix   
 
 What do the following commands do:  
-`ls`  
-`ls -a`  
-`ls -l`  
-`ls -lh`  
-`ls -lah`  
-`ls -t`  
-`ls -Glp`  
+`ls` - list all files (in a directory)  
+`ls -a`  - ... + hidden files  
+`ls -l`  - ... in a column with meta data  
+`ls -lh` - ... in a column with meta data and human readable sizes  
+`ls -lah`- ... in a column with meta data and human readable sizes and   hidden files  
+`ls -t`  - ... sort by time (last modified)  
+`ls -Glp` - ... in a column with / after dir name and colorize output  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
 
 ---
 
@@ -43,7 +52,12 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+`ls -l --time-style=full-iso` - print time as iso format  
+`ls --sort=extension` - sort files by extension type  
+`ls -tr` - sort files in reverse order last modification time  
+`ls -n` - show UID/ GID  
+`ls -1` - show each entry on one line
+
 
 ---
 
@@ -51,7 +65,15 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+xargs helps other commands accept standard input (STIN) as arguments.
 
+the following example finds files named untitled.txt and removes them.
+
+`find ./ -type f -name "untitled.txt" | xargs rm`
  
 
+the first part of the command (before the pipe) finds the files. 
+`find ./ -type f -name "untitled.txt"`  
+
+the second part (after the pipe) handles and breaks up the standard input and passes it to the remove command.   
+`xargs rm`
