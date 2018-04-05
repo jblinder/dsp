@@ -5,8 +5,8 @@
 `Biased Mean = 2.403679`
 
 ### Charts
-![PMF1](figs/pmf1.png)
-![PMF2](figs/pmf2.png)
+![](https://raw.githubusercontent.com/jblinder/dsp/master/statistics/figs/pmf1.png)
+![](https://raw.githubusercontent.com/jblinder/dsp/master/statistics/figs/pmf2.png)
 
 ### Code
 ```

@@ -32,6 +32,9 @@ The PMF shows lines for a random value and gaps for a value that was not generat
 
 The CDF shows a roughly linear line, indicating the the distribution is uniform.
 
+![](https://raw.githubusercontent.com/jblinder/dsp/master/statistics/figs/rnd1.png)
+![](https://raw.githubusercontent.com/jblinder/dsp/master/statistics/figs/rnd2.png)
+
 ### code
 ```
 import numpy as np
