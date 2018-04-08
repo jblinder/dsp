@@ -2,9 +2,9 @@
 
 #Ex 1
 
-###analysis
+###analysis  
 My birth weight was in the `89.48` percentile.
-
+![](https://raw.githubusercontent.com/jblinder/dsp/master/statistics/figs/rnd2.png)
 ###code
 ```
 import numpy as np
@@ -33,7 +33,9 @@ The PMF shows lines for a random value and gaps for a value that was not generat
 The CDF shows a roughly linear line, indicating the the distribution is uniform.
 
 ![](https://raw.githubusercontent.com/jblinder/dsp/master/statistics/figs/rnd1.png)
-![](https://raw.githubusercontent.com/jblinder/dsp/master/statistics/figs/rnd2.png)
+
+![](https://raw.githubusercontent.com/jblinder/dsp/master/statistics/figs/rnd3.png)
+
 
 ### code
 ```
